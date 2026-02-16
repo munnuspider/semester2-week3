@@ -6,13 +6,13 @@ The program `ptr_size.c` uses the `sizeof` operator to query the pointer data ty
 
 Compile and run the program.  
 
-Does the output match what you expect based on the machine architecture?
+Does the output match what you expect based on the machine architecture? for 64 bits, the size of the pointer is 8 bytes which is correct and expected
 - You can query this on linux using `uname -m`. 
 - `uname` is a utility that displays system information. Use `uname --help` for fuller details.
 
 Extend the program to output data about a double pointer:
-- Do you expect the size to change?
-- Why?
+- Do you expect the size to change? No
+- Why? 
 
 2. **Pointer operators**
 
@@ -24,9 +24,10 @@ Compile and run the code and examine the output.
 - We use the address operator `&` to get the address of a variable 
 - We use the dereferencing operator `*` to get the value stored at the address stored in the pointer.
 
-What format is the memory address displayed as?
+What format is the memory address displayed as?  hexadecimal // base 16
 
 3. Research and discuss why a pointer is statically typed.
+the compiler needs to know the scale and interpretation prior to execution 
 
 - ie. a pointer to an integer has to be declared as `int *p`
 - Hint: it is not connected to what it stores - all pointers store an address
